@@ -3,7 +3,7 @@ package ru.netology.manager;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Film;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ManagerTest {
     private Manager manager = new Manager();
@@ -31,7 +31,7 @@ class ManagerTest {
 
     @Test
     void shouldReturnAllMoviesForDefault() {
-        Film[] expected = new Film[]{eleven,tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second};
+        Film[] expected = new Film[]{eleven, tenth, ninth, eighth, seventh, sixth, fifth, fourth, third, second};
         manager.add(first);
         manager.add(second);
         manager.add(third);
